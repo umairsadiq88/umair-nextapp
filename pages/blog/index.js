@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar";
 import Link from "next/link";
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("https://fakestoreapi.com/products");
   const data = await res.json();
 
   return {
